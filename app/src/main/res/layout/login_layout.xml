@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoazul"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="TANGEDCO"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="180dp"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Icone do Usuário">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/transparente"
+            android:drawableLeft="@drawable/baseline_person"
+            android:hint="User Name"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Icone da senha">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/transparente"
+            android:drawableLeft="@drawable/baseline_lock"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="230dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="Forgot your password?"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    >
+    <Button
+        android:layout_width="410dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Sign In"
+        
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
